@@ -1,6 +1,7 @@
 #!/bin/bash
 
-source ./common.sh
+SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+source $SCRIPT_DIR/common.sh
 
 git clone https://github.com/davidh87/homeshaft.git /tmp/homeshaft
 
